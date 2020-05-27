@@ -1,0 +1,27 @@
+@startuml
+interface Run
+class Tractor
+class Server
+class Bicycle
+class Car
+class Jumpers
+class RollerSkates
+class TractorCrawler
+class TractorWheeled
+class Bus
+abstract Machine
+abstract Tractor
+
+Run <|.. Bicycle
+Run <|.. Car
+Run <|.. Jumpers
+Run <|.. RollerSkates
+Run <|.. Machine
+
+Machine <|-- Tractor
+Machine <|-- Bus
+
+Tractor <|-- TractorCrawler
+Tractor <|-- TractorWheeled
+
+@enduml
